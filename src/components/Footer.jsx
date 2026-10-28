@@ -2,9 +2,12 @@ import { Link } from "react-router-dom"
 import fb from "../assets/fb-icon-1.png"
 import insta from "../assets/insta-icon-2.jpg"
 import youtube from "../assets/youtube-icon.png"
- 
+import { useRef } from "react";
+
+
  function Footer()
  {   
+   
     return (      
         <footer className="footer-section">      
             <div className="container">
@@ -19,7 +22,7 @@ import youtube from "../assets/youtube-icon.png"
                                         <Link to="/products" className="footer-nav-link">SEARCH</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="footer-nav-link" data-bs-toggle="modal" data-bs-target="#loginModal" href="">LOGIN</a>
+                                        <a className="footer-nav-link" data-bs-toggle="modal" data-bs-target="#loginModal"  href="">LOGIN</a>
                                     </li>
                                     <li className="nav-item">
                                         <Link to="/cart" className="footer-nav-link">
@@ -67,6 +70,7 @@ import youtube from "../assets/youtube-icon.png"
                     </div>
                 </div>
             </div>
+           
         </footer>
       
     )

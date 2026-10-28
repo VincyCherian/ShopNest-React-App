@@ -1,11 +1,13 @@
 import { Link, NavLink } from "react-router-dom"
 import { useCart } from "../context/CartContext"
 import logo from "../assets/ShopNest Logo.png"
+import { useRef } from "react";
 
 
 function Navbar(){
 
     const {cartCount} = useCart();
+
     return(
         <header>
             <nav id="shopnest-navbar" className="navbar navbar-expand-lg" >
