@@ -139,7 +139,7 @@ The application can be deployed to Netlify.
 4. Set the publish directory to `dist` for a standard Vite project.
 5. Deploy the application and verify that all routes work correctly.
 
-**Live Demo:** 
+**Live Demo:** https://shopnestecomapp.netlify.app/
 
 ## Learning Outcomes
 
