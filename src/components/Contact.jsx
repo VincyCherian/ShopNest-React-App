@@ -49,27 +49,27 @@ Have a question or need assistance? Fill out our contact form with your details 
     <tbody>
         <tr>
             <th><label htmlFor="fullName">Full Name</label></th>
-            <td><input type="text" name="fullName" /></td>
+            <td><input type="text" name="fullName" id="fullName" /></td>
         </tr>
 
         <tr>
             <th><label htmlFor="emailAddress">Email Address</label></th>
-            <td><input type="email" name="emailAddress" /></td>
+            <td><input type="email" name="emailAddress" id="emailAddress" /></td>
         </tr>
 
         <tr>
             <th><label htmlFor="phNumber">Contact number</label></th>
-            <td><input type="text" name="phNumber" /></td>
+            <td><input type="text" name="phNumber" id="phNumber" /></td>
         </tr>
 
         <tr>
             <th><label htmlFor="subject">Subject</label></th>
-            <td><input type="text" name="subject" /></td>
+            <td><input type="text" name="subject" id="subject" /></td>
         </tr>
 
         <tr>
             <th><label htmlFor="message">Message</label></th>
-            <td><input type="textarea" name="message" /></td>
+            <td> <textarea id="message" name="message" rows="5" placeholder="Enter your message" required/></td>
         </tr>
 
         <tr>

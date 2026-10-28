@@ -26,7 +26,11 @@ function CartItems({id,title, category, price, rating,image, quantity, tax}){
                             </div>
                         </td>
                     <td className="col-md-4" style={{"paddingRight" : "70px"}}>
-                            <button onClick={()=>removeFromCart({id})} className="btn btn-outline-danger btn-sm bi bi-trash">
+                            {/* <button onClick={()=>removeFromCart({id})} className="btn btn-outline-danger btn-sm bi bi-trash">
+                            </button> */}
+
+                             <button type="button" onClick={() => removeFromCart({ id })} className="btn btn-outline-danger btn-sm" aria-label={`Remove ${title} from cart`}  title="Remove item" >
+                                 <i className="bi bi-trash"></i>
                             </button>
                         </td>
                     </tr>

@@ -66,13 +66,13 @@ function Products(){
 
                          &nbsp;&nbsp;
 
-                        <button type="button" className="btn btn-primary" onClick={handleSearch} >
+                        <button type="button" className="btn btn-primary searchBtns" onClick={handleSearch} >
                              Search
                          </button>
 
                          &nbsp;&nbsp;
 
-                        <button type="button" className="btn btn-primary" onClick={handleReset} >
+                        <button type="button" className="btn btn-primary searchBtns" onClick={handleReset} >
                              Reset
                          </button>
                     
@@ -87,12 +87,23 @@ function Products(){
                                 )) 
                                 ) : (
                                <>
-                               <div style={{"textAlign":"center", "border":"2px solid", "borderRadius":"5px", "width":"300px", "backgroundColor": "blanchedalmond", "marginLeft":"450px"}}>
-                                    <br/><br/>
-                                    <p>No products found in this category.</p><br/>
-                                    <button style={{"width":"250px"}} className="btn btn-primary" onClick={() => setSelectedCategory("ALL")}>Continue Shopping</button>
-                                    <br/><br/>
-                               </div>
+                               <div className="col-12">
+                                     <div className="no-products-found">
+                                          <p>No products found in this category.</p>
+
+                                         <button
+                                            className="btn btn-primary"
+                                            onClick={() => {
+                                                setSelectedCategory("ALL");
+                                                setSearchText("");
+                                                setSubmittedSearch("");
+                                                setSearchParam({});
+                                            }}
+                                        >
+                                            Continue Shopping
+                                        </button>
+                                    </div>
+                                </div>
                                </> 
                             )}
 

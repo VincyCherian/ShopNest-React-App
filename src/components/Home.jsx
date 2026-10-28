@@ -165,10 +165,10 @@ function Home(){
                     <h2 id="newsletter-title">Newsletter SignUp</h2>
                     <div className="container">
                         <div className="row h-40 justify-content-center">
-                            <div id="newsltr-items" className="col-12 col-md-12 col-lg-12">
-                                    <label id="email_id_label" htmlFor="cust_email_id">Email ID</label>
-                                    <input type="email" id="cust_email_id" name="cust_email_id" placeholder="Enter your Email ID" required />
-                                    <button id="btn-subscribe" type="submit" className="btn btn-primary">Subscribe</button>
+                            <div id="newsltr-items" className="col-12 col-md-12 col-sm-12 col-lg-12">
+                                    <label className="news-itemClass" id="email_id_label" htmlFor="cust_email_id">Email ID</label>
+                                    <input className="news-itemClass" type="email" id="cust_email_id" name="cust_email_id" placeholder="Enter your Email ID" required />
+                                    <button id="btn-subscribe" type="submit" className="btn btn-primary news-itemClass">Subscribe</button>
                             </div>
                         </div>
                     </div>

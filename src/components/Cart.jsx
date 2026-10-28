@@ -15,10 +15,10 @@ function Cart()
                 <tbody>
                     <tr>
                         <td className="col-md-4"></td>
-                        <td className="col-md-4">TOTAL ITEMS : {cartCount}<br/>
+                        <td className="col-md-4 col-sm-12">TOTAL ITEMS : {cartCount}<br/>
                         TOTAL TAX Incl.: $ {cartTaxTotal.toFixed(2)} <br/>
                         TOTAL AMOUNT(Incl. tax) : $ {cartTotal.toFixed(2)}</td>
-                        <td className="col-md-4">
+                        <td className="col-md-4 col-sm-12">
                             <button onClick={()=>clearCart()} className="btn btn-primary">CLEAR CART</button>
                         </td>
                         <td className="col-md-4"></td>
